@@ -48,7 +48,17 @@ public class CtrlCompras {
 	{
 		ComprasVO compras = new ComprasVO();
 		compras.Fornecedor = txtFor.getText();
+		if (compras.Fornecedor == "")
+		{
+			JOptionPane.showMessageDialog(null, "fornecedor inválido");
+			return;
+		}
 		compras.Produto = txtPro.getText();
+		if (compras.Produto == "")
+		{
+			JOptionPane.showMessageDialog(null, "produto inválido");
+			return;
+		}
 		try
 		{
 			compras.Preco = Double.parseDouble(txtPre.getText().replace(',', '.'));
