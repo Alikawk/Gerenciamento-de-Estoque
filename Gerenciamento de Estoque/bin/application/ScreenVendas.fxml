@@ -6,36 +6,45 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CtrlVendas">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CtrlVendas">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" text="Cliente">
+      <Label layoutX="14.0" layoutY="6.0" text="Código da Venda">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="14.0" layoutY="41.0" prefHeight="31.0" prefWidth="210.0" />
-      <Label layoutX="14.0" layoutY="104.0" text="Produto">
+      <TextField fx:id="txtVen" layoutX="14.0" layoutY="33.0" prefHeight="31.0" prefWidth="130.0" />
+      <Label layoutX="14.0" layoutY="120.0" text="Código do Produto">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="11.0" layoutY="186.0" text="Fornecedor">
+      <Label layoutX="16.0" layoutY="244.0" text="Quantidade">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="16.0" layoutY="280.0" text="Quantidade">
+      <TextField fx:id="txtPro" layoutX="15.0" layoutY="147.0" prefHeight="31.0" prefWidth="130.0" />
+      <TextField fx:id="txtQtde" layoutX="16.0" layoutY="271.0" prefHeight="31.0" prefWidth="127.0" />
+      <TextField fx:id="txtCli" layoutX="14.0" layoutY="89.0" prefHeight="31.0" prefWidth="130.0" />
+      <Label layoutX="14.0" layoutY="64.0" text="Código do Cliente">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="15.0" layoutY="131.0" prefHeight="31.0" prefWidth="210.0" />
-      <TextField layoutX="17.0" layoutY="220.0" prefHeight="31.0" prefWidth="210.0" />
-      <TextField layoutX="16.0" layoutY="307.0" prefHeight="31.0" prefWidth="127.0" />
-      <Button layoutX="16.0" layoutY="369.0" mnemonicParsing="false" text="Cadastrar Venda">
+      <TextField fx:id="txtPre" layoutX="16.0" layoutY="213.0" prefHeight="31.0" prefWidth="127.0" />
+      <Label layoutX="16.0" layoutY="186.0" text="Preço de Venda">
          <font>
             <Font size="18.0" />
          </font>
-      </Button>
+      </Label>
+      <TextField fx:id="txtDat" layoutX="16.0" layoutY="329.0" prefHeight="31.0" prefWidth="127.0" />
+      <Label layoutX="16.0" layoutY="302.0" text="Data de Venda">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPesquisar" layoutX="16.0" layoutY="422.0" mnemonicParsing="false" onAction="#btnPesquisarHandler" prefHeight="43.0" prefWidth="162.0" text="Pesquisa por Código" />
+      <Button fx:id="btnAdcionar" layoutX="16.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnAdicionarHandler" prefHeight="43.0" prefWidth="160.0" text="Adicionar Venda" textAlignment="CENTER" />
    </children>
 </AnchorPane>

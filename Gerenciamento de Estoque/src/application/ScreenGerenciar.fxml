@@ -1,44 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CtrlGerenciar">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CtrlGerenciar">
    <children>
-      <TableView layoutX="192.0" layoutY="13.0" prefHeight="433.0" prefWidth="434.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="Produto" />
-          <TableColumn prefWidth="105.0" text="Fornecedor" />
-            <TableColumn prefWidth="84.0" text="Preço" />
-            <TableColumn minWidth="0.0" prefWidth="99.0" text="Quantidade" />
-            <TableColumn prefWidth="75.0" text="Posição" />
-        </columns>
-      </TableView>
-      <ComboBox layoutX="14.0" layoutY="60.0" prefWidth="150.0" />
-      <Button layoutX="24.0" layoutY="191.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="122.0" text="Atualizar">
+      <Button fx:id="btnAtualizar" layoutX="241.0" layoutY="157.0" mnemonicParsing="false" onAction="#btnAtualizarHandler" prefHeight="45.0" prefWidth="192.0" text="Atualizar">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Label layoutX="14.0" layoutY="23.0" text="Selecione um Produto">
+      <Label layoutX="15.0" layoutY="332.0" text="Quantidade">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="104.0" text="Nova Quantidade">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <TextField layoutX="13.0" layoutY="131.0" prefHeight="31.0" prefWidth="150.0" />
-      <Button layoutX="24.0" layoutY="333.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="122.0" text="Remover">
+      <TextField fx:id="txtQtde" disable="true" layoutX="14.0" layoutY="359.0" prefHeight="31.0" prefWidth="111.0" />
+      <Button fx:id="btnRemover" layoutX="241.0" layoutY="223.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="192.0" text="Remover">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="24.0" layoutY="270.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="122.0" text="Relatório">
+      <Button fx:id="btnAdicionar" layoutX="241.0" layoutY="89.0" mnemonicParsing="false" onAction="#btnAdicionarHandler" prefHeight="45.0" prefWidth="192.0" text="Adicionar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNom" layoutX="14.0" layoutY="54.0" prefHeight="31.0" prefWidth="183.0" />
+      <Label layoutX="15.0" layoutY="27.0" text="Nome do Produto">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="93.0" text="Código do Produto">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCod" layoutX="13.0" layoutY="120.0" prefHeight="31.0" prefWidth="111.0" />
+      <Label layoutX="14.0" layoutY="279.0" text="Preço">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPre" layoutX="13.0" layoutY="306.0" prefHeight="31.0" prefWidth="111.0" />
+      <Label layoutX="14.0" layoutY="155.0" text="Posição">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPos" layoutX="13.0" layoutY="182.0" prefHeight="31.0" prefWidth="214.0" />
+      <Label layoutX="15.0" layoutY="221.0" text="Tempo de Reposiçao">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTem" layoutX="14.0" layoutY="248.0" prefHeight="31.0" prefWidth="183.0" />
+      <Button fx:id="btnPesquisar" layoutX="241.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnPesquisarHandler" prefHeight="45.0" prefWidth="192.0" text="Pesquisa por Código">
          <font>
             <Font size="18.0" />
          </font>

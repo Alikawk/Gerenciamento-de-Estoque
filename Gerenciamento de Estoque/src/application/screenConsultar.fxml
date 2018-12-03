@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CtrlConsultar">
+   <children>
+      <TableView fx:id="TableMain" layoutX="199.0" layoutY="44.0" prefHeight="494.0" prefWidth="513.0">
+         <columns>
+            <TableColumn fx:id="tmNom" prefWidth="78.0" text="Nome" />
+            <TableColumn fx:id="tmCod" prefWidth="57.0" text="Código" />
+            <TableColumn fx:id="tmPos" prefWidth="133.0" text="Posição" />
+            <TableColumn fx:id="tmQtde" prefWidth="89.0" text="Quantidade" />
+            <TableColumn fx:id="tmPre" prefWidth="58.0" text="Valor" />
+            <TableColumn fx:id="tmTem" prefWidth="100.0" text="Reposição" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtNom" layoutX="51.0" layoutY="43.0" prefHeight="31.0" prefWidth="142.0" />
+      <Label layoutX="51.0" layoutY="15.0" prefHeight="28.0" prefWidth="71.0" text="Nome">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="51.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnPesquisarHandler" prefHeight="40.0" prefWidth="142.0" text="Pesquisar" />
+      <Label layoutX="51.0" layoutY="74.0" prefHeight="28.0" prefWidth="71.0" text="Código">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCod" layoutX="51.0" layoutY="102.0" prefHeight="31.0" prefWidth="142.0" />
+      <Label layoutX="51.0" layoutY="133.0" prefHeight="28.0" prefWidth="71.0" text="Posição">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPos" layoutX="51.0" layoutY="161.0" prefHeight="31.0" prefWidth="142.0" />
+      <Label layoutX="51.0" layoutY="192.0" prefHeight="28.0" prefWidth="105.0" text="Quantidade">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQtde" layoutX="51.0" layoutY="220.0" prefHeight="31.0" prefWidth="142.0" />
+      <Label layoutX="51.0" layoutY="288.0" prefHeight="28.0" prefWidth="71.0" text="Valor">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPre" layoutX="51.0" layoutY="316.0" prefHeight="31.0" prefWidth="142.0" />
+      <Label layoutX="51.0" layoutY="392.0" prefHeight="28.0" prefWidth="91.0" text="Reposição">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTem" layoutX="51.0" layoutY="420.0" prefHeight="31.0" prefWidth="142.0" />
+      <RadioButton fx:id="rbNom" layoutX="20.0" layoutY="48.0" mnemonicParsing="false" selected="true">
+         <toggleGroup>
+            <ToggleGroup fx:id="G1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbCod" layoutX="20.0" layoutY="107.0" mnemonicParsing="false" toggleGroup="$G1" />
+      <RadioButton fx:id="rbPos" layoutX="20.0" layoutY="166.0" mnemonicParsing="false" toggleGroup="$G1" />
+      <RadioButton fx:id="rbQtde" layoutX="20.0" layoutY="225.0" mnemonicParsing="false" toggleGroup="$G1" />
+      <RadioButton fx:id="rbPre" layoutX="20.0" layoutY="321.0" mnemonicParsing="false" toggleGroup="$G1" />
+      <RadioButton fx:id="rbTem" layoutX="20.0" layoutY="425.0" mnemonicParsing="false" toggleGroup="$G1" />
+      <ComboBox fx:id="CbCod" layoutX="51.0" layoutY="461.0" prefHeight="31.0" prefWidth="142.0" />
+      <ComboBox fx:id="CbQtde" layoutX="51.0" layoutY="257.0" prefHeight="31.0" prefWidth="142.0" />
+      <ComboBox fx:id="CbValor" layoutX="51.0" layoutY="354.0" prefHeight="31.0" prefWidth="142.0" />
+   </children>
+</AnchorPane>

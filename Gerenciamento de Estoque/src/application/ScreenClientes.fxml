@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CtrlClientes">
+   <children>
+      <Label layoutX="15.0" layoutY="9.0" text="Nome do Cliente">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdcionar" layoutX="16.0" layoutY="142.0" mnemonicParsing="false" onAction="#btnAdicionarHandler" prefHeight="43.0" prefWidth="165.0" text="Adicionar" textAlignment="CENTER" />
+      <TextField fx:id="txtCod" layoutX="15.0" layoutY="96.0" prefHeight="31.0" prefWidth="114.0" />
+      <Label layoutX="14.0" layoutY="68.0" text="Código do Cliente">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPesquisar" layoutX="16.0" layoutY="264.0" mnemonicParsing="false" onAction="#btnPesquisarHandler" prefHeight="43.0" prefWidth="165.0" text="Pesquisa por Código" />
+      <TextField fx:id="txtNom" layoutX="14.0" layoutY="37.0" prefHeight="31.0" prefWidth="114.0" />
+      <Button fx:id="btnAtualizar" layoutX="16.0" layoutY="203.0" mnemonicParsing="false" onAction="#btnAtualizarHandler" prefHeight="43.0" prefWidth="165.0" text="Atualizar" />
+   </children>
+</AnchorPane>

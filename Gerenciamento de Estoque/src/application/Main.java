@@ -1,4 +1,4 @@
-// Álisson Kawachi RA: 081160011
+// ï¿½lisson Kawachi RA: 081160011
 // Ivan Zanutto RA081160003
 
 package application;
@@ -6,6 +6,10 @@ package application;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -40,7 +44,7 @@ public class Main extends Application {
 		c.Quantidade = 50;
 		c.Tempo = 2;
 		System.out.println(ComprasDAO.insert(c));*/
-		Connection co = null;
+		/*Connection co = null;
 		try {
 			co = SqlConnection.getConn();
 		} catch (Exception e1) {
@@ -51,6 +55,13 @@ public class Main extends Application {
 			r.next();
 			System.out.println(r.getString("produto"));
 		} catch (SQLException e) {
+			e.printStackTrace();
+		}*/
+		//new DateFormat().format();
+		try {
+			System.out.println((new SimpleDateFormat("dd/MM/yyyy")).format(new Date()));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		launch();

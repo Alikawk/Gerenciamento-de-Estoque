@@ -28,25 +28,39 @@ public class CtrlMain {
 			e.printStackTrace();
 		}
 	}
-
-
-	/*public void ShowClientes() {
+	
+	public void ShowConsultar() throws IOException {
 		try {
-			AnchorPane pnlOne = FXMLLoader.load(this.getClass().getResource("../application/ScreenVendas.fxml"));
+			AnchorPane pnlOne = FXMLLoader.load(this.getClass().getResource("../application/screenConsultar.fxml"));
 			childPane.getChildren().setAll(pnlOne);
+			childPane.getParent(); // TODO set title
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public void ShowVeiculos() {
+	public void ShowFornecedores() throws IOException {
 		try {
-			AnchorPane pnlOne = FXMLLoader.load(this.getClass().getResource("../application/CadVeiculos.fxml"));
+			AnchorPane pnlOne = FXMLLoader.load(this.getClass().getResource("../application/ScreenFornecedores.fxml"));
 			childPane.getChildren().setAll(pnlOne);
+			childPane.getParent(); // TODO set title
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}*/
+	}
+	
+	public void ShowClientes() throws IOException {
+		try {
+			AnchorPane pnlOne = FXMLLoader.load(this.getClass().getResource("../application/ScreenClientes.fxml"));
+			childPane.getChildren().setAll(pnlOne);
+			childPane.getParent(); // TODO set title
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	
 
 	public void ShowCompras() {
 		try {
